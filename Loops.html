@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loops</title>
+</head>
+<body>
+
+    <label>Number: </label>
+    <input type="number" id="num" onchange="getNumber(event)">
+    <button onclick="run()">Run</button>
+
+    <script>
+        var num = 0;
+
+        function getNumber(e) {
+            num = e.target.value;
+        }
+
+        function run() {
+            for (let i = 1; i <= 10; i++) {
+                var Output = num * i;
+                console.log(Output);
+            }
+        }
+    </script>
+
+</body>
+</html>
