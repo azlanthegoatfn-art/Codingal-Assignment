@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Card</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Card</h1>
+    <h2>Introduction to Objects in JavaScript</h2>
+
+    <h3>Student Details</h3>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="school"></p>
+    <p id="city"></p>
+
+    <script>
+
+        let student = {
+            'name': "Azlan",
+            'age': 14,
+            'school': "Generations",
+            'city': "Karachi"
+        }
+
+        document.getElementById("name").textContent = "Name: " + student.name
+        document.getElementById("age").textContent = "Age: " + student.age
+        document.getElementById("school").textContent = "School: " + student.school
+        document.getElementById("city").textContent = "City: " + student['city']
+
+    </script>
+
+</body>
+</html>
